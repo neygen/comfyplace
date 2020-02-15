@@ -1,0 +1,382 @@
+/*
+
+Tooplate 2118 Chilling Cafe
+
+https://www.tooplate.com/view/2118-chilling-cafe
+
+    Title color:            #b89084
+    Text color:             #666666
+    Text Dark color:        #333333 
+    Table Heading color:    #d9c2bd
+    Table Alternate color:  #e6dbd8 
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Merienda+One&display=swap');
+@import url('hhttps://fonts.googleapis.com/css?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+body {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/000/112/630/non_2x/vector-pastel-geometric-pattern-background.jpg);
+  color: #8c8c8c;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 15px;
+  margin: 0;
+}
+
+/* logout form */
+.example_b {
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #b5918b;
+padding: 15px;
+border-radius: 40px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+}
+
+.example_b:hover {
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+
+/* login button */
+
+ * {
+box-sizing: border-box;
+}
+/* Fix the button on the left side of the page */
+.open-btn {
+display: flex;
+justify-content: right;
+}
+/* Style and fix the button on the page */
+.open-button {
+background-color: #b5918b;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+opacity: 0.8;
+position: fixed;
+align: right;
+}
+/* Position the Popup form */
+.login-popup {
+position: relative;
+text-align: center;
+width: 100%;
+}
+/* Hide the Popup form */
+.form-popup {
+display: none;
+position: fixed;
+left: 15%;
+top:5%;
+transform: translate(-45%,5%);
+border: 2px solid #666;
+z-index: 9;
+}
+/* Styles for the form container */
+.form-container {
+max-width: 300px;
+padding: 20px;
+background-color: #fff;
+}
+/* Full-width for input fields */
+.form-container input[type=text], .form-container input[type=password] {
+width: 100%;
+padding: 10px;
+margin: 5px 0 22px 0;
+border: none;
+background: #eee;
+}
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+/* Style submit/login button */
+.form-container .btn {
+background-color: #8ebf42;
+color: #fff;
+padding: 12px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+}
+/* Style cancel button */
+.form-container .cancel {
+background-color: #cc0000;
+}
+/* Hover effects for buttons */
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
+
+/* add coffee button */
+.button {        
+    display: inline-block;
+    white-space: nowrap;
+    background-color: #e8c8bd;
+    background-image: linear-gradient(top, #eee, #e8c8bd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#e8c8bd');
+    border: 1px solid #777;
+    padding: 0 1.5em;
+    margin: 0.5em;
+    font: bold 1em/2em Arial, Helvetica;
+    text-decoration: none;
+    color: #333;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+    border-radius: .2em;
+    box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
+}
+
+.button:hover {
+    background-color: #dab7ad;        
+    background-image: linear-gradient(top, #fafafa, #dab7ad);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dab7ad');        
+}
+
+.button:active {
+    box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+    position: relative;
+    top: 1px;
+}
+
+.button:focus {
+    outline: 0;
+    background: #fafafa;
+}    
+
+.button:before {
+    background: #ccc;
+    background: rgba(0,0,0,.1);
+    float: left;        
+    width: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 1em 0 -1em;
+    padding: 0 .2em;
+    box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
+    border-radius: .15em 0 0 .15em;
+    pointer-events: none;        
+}
+
+/* Hexadecimal entities for the icons */
+
+.add:before {
+    content: "\271A";
+}
+
+.tm-container {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tm-main-content { background-color: #e8e7e1; }
+
+#tm-intro-img {
+  background-image: url(../img/coffee.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 425px;
+}
+
+.tm-text-white { color: #ab8079; }
+
+.tm-page-header-container { text-align: center; }
+
+.tm-page-header {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  font-family: 'Merienda One', cursive;
+  font-size: 3.1rem;
+  font-weight: 400;
+  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+}
+
+.tm-page-icon {
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 15px;
+}
+
+.tm-section-header {
+  color: #b89084;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+td {
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.tm-text-left { text-align: left; }
+
+th {
+  color: #333333;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+tr:nth-child(odd) { background-color: #e6dbd8; }
+
+tr.tm-tr-header {
+  background-color: #d9c2bd;
+  height: 50px;
+}
+
+.tm-section {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
+.tm-section-small {
+  max-width: 490px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.tm-mb-0 { margin-bottom: 0; }
+img { max-width: 100%; }
+figure { margin: 0; }
+figcaption { text-align: center; }
+
+figcaption span {
+  display: block;
+  color: #333333;
+  font-size: 18px;
+}
+
+.tm-item-name {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.tm-special-items {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.tm-special-item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+hr {
+  width: 60%;
+  border: 0.5px solid #ccc;
+}
+
+.tm-social-icons {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.tm-social-icons i { font-size: 1.2rem; }
+.tm-social-link-container { display: inline-block; }
+
+.tm-social-link {
+  color: white;
+  background-color: #c5ced8;
+  border-radius: 2px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.tm-social-link:hover { background-color: #808e9e; }
+
+.tm-contact-link {
+  color: #333333;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a { transition: all 0.3s ease; }
+.tm-contact-link:hover { color: #808e9e; }
+
+.tm-footer-text {
+  font-size: 0.9rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tm-footer-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.tm-footer-link:hover { color: #c5ced8; }
+
+@media (max-width: 550px) {
+  .tm-special-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .tm-special-items {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tm-special-item {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .tm-special-items {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+}
+
+@media (max-width: 430px) {
+  .tm-responsive-table { overflow-x: auto; }
+  table { width: auto; }
+  .tm-special-items { flex-direction: column; }
+  .tm-special-item { margin-bottom: 40px; }
+  figcaption p {
+    margin-bottom: 0;
+    line-height: 1;
+  }
+}
